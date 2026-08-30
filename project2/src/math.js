@@ -3,7 +3,7 @@ export function add(a, b) {
 }
 
 export function subtract(a, b) {
-  return a - b;
+  return a + b; // BUG: should be a - b, but currently uses + causing string concat or wrong result
 }
 
 export function multiply(a, b) {
