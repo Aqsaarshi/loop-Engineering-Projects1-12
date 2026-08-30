@@ -1,0 +1,19 @@
+{
+  "name": "project-4",
+  "version": "1.0.0",
+  "description": "Maker-Checker Fix Loop with Worktrees",
+  "main": "src/math.js",
+  "scripts": {
+    "test": "node --test",
+    "review:good": "node reviewer/reviewer.js",
+    "review:bad": "node reviewer/reviewer.js",
+    "pr:good": "node scripts/create-pr.js --good",
+    "pr:bad": "node scripts/create-pr.js --bad",
+    "implement:good": "node scripts/implement-good-fix.js",
+    "implement:bad": "node scripts/implement-bad-fix.js"
+  },
+  "keywords": ["maker", "checker", "fix", "worktree", "git"],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
