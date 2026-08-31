@@ -1,0 +1,15 @@
+name: OpenCode PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OpenCode
+        uses: opencode/actions/install@v1
+      - name: Run OpenCode Review
+        run: opencode review --review-buggy-code
