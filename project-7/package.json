@@ -1,0 +1,14 @@
+{
+  "name": "project-7",
+  "version": "1.0.0",
+  "description": "Project 7 - Observability, Cost Measurement, Failure Diagnosis",
+  "main": "loop.js",
+  "scripts": {
+    "start": "node loop.js",
+    "test": "node loop.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
