@@ -1,0 +1,16 @@
+Last reviewed date: 2026-09-01
+Entries after 2026-09-01: 7
+Repeated failures found: 2
+Repeated error: result: ?? failure - typeerror: 'nonetype' object has no attribute 'execute'. the script halts mid-execution.
+  Occurrences: 3
+  Proposed rule: Never call a method on a value without checking it is not None first.
+  Dates:
+    - 2026-09-02 09:15:00 AM: Result: ?? FAILURE - TypeError: 'NoneType' object has no attribute 'execute'. The script halts mid-execution.
+    - 2026-09-03 02:00:00 PM: Result: ?? FAILURE - TypeError: 'NoneType' object has no attribute 'execute'. The script halts mid-execution.
+    - 2026-09-05 11:00:00 AM: Result: ?? FAILURE - TypeError: 'NoneType' object has no attribute 'execute'. The script halts mid-execution.
+Unused rules (never triggered in reviewed window):
+  - **Never commit without running tests**: Always execute `pytest` (or the project's test suite) before committing any changes. This prevents broken code from entering the repository.
+  - **Check for None before executing**: Before calling any method or function, verify that the object is not None. This prevents the `TypeError: 'NoneType' object has no attribute 'execute'` error seen in the logs.
+  - **Push only on clean branch**: Ensure the current branch has an upstream tracking branch set, or use `git push --set-upstream` before pushing feature branches.
+  - **Document all API changes**: Any new or modified API endpoint must be reflected in the documentation directory within 24 hours of the change.
+  - **Run integration tests before deployment**: Always execute the full integration test suite against a staging environment before deploying to production.
