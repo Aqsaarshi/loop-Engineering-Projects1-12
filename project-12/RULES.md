@@ -2,6 +2,8 @@
 
 ## General Rules
 
+1. **Never commit without running tests**: Always execute `pytest` (or the project's test suite) before committing any changes. This prevents broken code from entering the repository.
+
 2. **Check for None before executing**: Before calling any method or function, verify that the object is not None. This prevents the `TypeError: 'NoneType' object has no attribute 'execute'` error seen in the logs.
 
 3. **Never call a method on a value without checking it is not None first.**: Before calling any method or attribute on an object, verify the object is not None. This prevents the `TypeError: 'NoneType' object has no attribute 'execute'` error seen in the logs.
